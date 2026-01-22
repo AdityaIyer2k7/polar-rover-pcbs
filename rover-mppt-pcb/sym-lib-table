@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BQ25820RRVR")(type "KiCad")(uri "${KIPRJMOD}/symbols.pretty/BQ25820RRVR.kicad_sym")(options "")(descr ""))
+  (lib (name "BQ24650RVAT")(type "KiCad")(uri "${KIPRJMOD}/symbols.pretty/BQ24650RVAT.kicad_sym")(options "")(descr ""))
+)
