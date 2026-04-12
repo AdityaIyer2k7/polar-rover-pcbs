@@ -1,4 +1,4 @@
-26639909955630409
+26639925214471408
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72065,6 +72065,13 @@ mountinghole M8
 9
 1
 MountingHole
+MountingHole_M2.5_thinoutline
+
+
+0
+1
+1
+MountingHole
 ToolingHole_1.152mm
 Tooling Hole 1.152mm, 1.3mm solder mask, JLCPCB specification, https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order
 mounting
@@ -106260,16 +106267,9 @@ Varistor VF
 2
 2
 footprints
-POWERDFN-8-6x5mm
-DD Package; 8-Lead Plastic DFN (6mm x 5mm) (see http://www.everspin.com/file/236/download)
-dfn 
-0
-48
-3
-footprints
-RING#10_hole
+logo
 
 
 0
-1
-1
+0
+0
