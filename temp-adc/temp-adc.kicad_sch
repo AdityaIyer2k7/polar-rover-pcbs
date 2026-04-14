@@ -1571,6 +1571,12 @@
 		(uuid "a9647585-df1a-4143-96f6-6f481acbf1aa")
 	)
 	(junction
+		(at 105.41 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9934473-d9e4-4501-bfd8-1edc6418886b")
+	)
+	(junction
 		(at 50.8 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1581,12 +1587,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f46494c7-0d6e-466e-b980-2cebef51ff20")
-	)
-	(junction
-		(at 105.41 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe927ff3-9bcc-4bdb-998d-c43476648d45")
 	)
 	(wire
 		(pts
@@ -1670,16 +1670,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 101.6) (xy 105.41 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2486b196-e6ad-4ba5-bb85-bffff7564789")
-	)
-	(wire
-		(pts
 			(xy 152.4 66.04) (xy 149.86 66.04)
 		)
 		(stroke
@@ -1727,6 +1717,16 @@
 			(type default)
 		)
 		(uuid "452e6275-6ee6-4363-a894-3f30a684071d")
+	)
+	(wire
+		(pts
+			(xy 105.41 101.6) (xy 105.41 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4696de5d-5fdb-4498-8dda-7f7ae59d4133")
 	)
 	(wire
 		(pts
@@ -3559,7 +3559,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
@@ -3765,7 +3764,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
