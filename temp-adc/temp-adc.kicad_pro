@@ -469,7 +469,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "footprints"
+    ],
     "pinned_symbol_libs": [
       "ADC10738CIWMX",
       "MAX11600EKA"
@@ -513,7 +515,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "out/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -656,7 +658,7 @@
         "uuid": "f73c6a48-c777-4d34-85c5-6b67d53582c5"
       }
     ],
-    "used_designators": "TH5,R9-10,C5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
