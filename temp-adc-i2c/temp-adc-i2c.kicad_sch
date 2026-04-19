@@ -5,17 +5,14 @@
 	(uuid "f73c6a48-c777-4d34-85c5-6b67d53582c5")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Analog_ADC:MCP3204"
-			(pin_names
-				(offset 0.762)
-			)
+		(symbol "Analog_ADC:MCP3428x-xSL"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -5.08 10.795 0)
+				(at -6.35 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,30 +22,19 @@
 					(justify right)
 				)
 			)
-			(property "Value" "MCP3204"
-				(at -5.08 8.89 0)
+			(property "Value" "MCP3428x-xSL"
+				(at 1.27 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 22.86 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21298c.pdf"
-				(at 22.86 -7.62 0)
+			(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+				(at 21.59 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -58,7 +44,18 @@
 					)
 				)
 			)
-			(property "Description" "A/D Converter, 12-Bit, 4-Channel, SPI Interface, 2.7V-5.5V"
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf"
+				(at 0 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "16-Bit, Multi-Channel ΔΣ Analog-to-Digital Converter with I2C Interface and On-Board Reference, SOIC-14"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -69,7 +66,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "12bit ADC Reference Single Supply SPI 4ch"
+			(property "ki_keywords" "adc 4ch 16bit i2c"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -80,7 +77,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm*"
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -91,108 +88,10 @@
 					)
 				)
 			)
-			(symbol "MCP3204_0_0"
-				(text "MUX"
-					(at -6.35 -1.27 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "ADC"
-					(at -0.635 -1.27 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "CNTRL"
-					(at 5.969 -2.667 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left bottom)
-					)
-				)
-			)
-			(symbol "MCP3204_0_1"
-				(polyline
-					(pts
-						(xy -7.62 3.81) (xy -7.62 -6.35) (xy -5.08 -5.08) (xy -5.08 2.54) (xy -7.62 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -1.27) (xy -3.81 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -1.27) (xy -2.54 0.635) (xy 1.905 0.635) (xy 1.905 -3.175) (xy -2.54 -3.175) (xy -3.81 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -1.27) (xy 3.81 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 2.54) (xy -3.81 2.54) (xy -3.81 4.445) (xy -6.35 4.445) (xy -6.35 3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "MCP3428x-xSL_0_1"
 				(rectangle
-					(start 3.81 -3.302)
-					(end 6.985 3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 12.7 7.62)
-					(end -12.7 -10.16)
+					(start -7.62 10.16)
+					(end 7.62 -12.7)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -202,11 +101,11 @@
 					)
 				)
 			)
-			(symbol "MCP3204_1_1"
+			(symbol "MCP3428x-xSL_1_1"
 				(pin input line
-					(at -15.24 2.54 0)
+					(at -10.16 7.62 0)
 					(length 2.54)
-					(name "CH0"
+					(name "CH1+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -222,9 +121,9 @@
 					)
 				)
 				(pin input line
-					(at -15.24 0 0)
+					(at -10.16 5.08 0)
 					(length 2.54)
-					(name "CH1"
+					(name "CH1-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -240,9 +139,9 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -2.54 0)
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "CH2"
+					(name "CH2+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -258,9 +157,9 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -5.08 0)
+					(at -10.16 0 0)
 					(length 2.54)
-					(name "CH3"
+					(name "CH2-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -275,11 +174,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 -10.16 90)
+				(pin power_in line
+					(at 0 -15.24 90)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "V_{SS}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -294,11 +192,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -7.62 -10.16 90)
+				(pin power_in line
+					(at 0 12.7 270)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "V_{DD}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -313,10 +210,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -12.7 90)
+				(pin bidirectional line
+					(at 10.16 2.54 180)
 					(length 2.54)
-					(name "DGND"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -332,9 +229,9 @@
 					)
 				)
 				(pin input line
-					(at 15.24 -5.08 180)
+					(at 10.16 5.08 180)
 					(length 2.54)
-					(name "~{CS}/SHDN"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -350,9 +247,9 @@
 					)
 				)
 				(pin input line
-					(at 15.24 -2.54 180)
+					(at 10.16 -5.08 180)
 					(length 2.54)
-					(name "Din"
+					(name "Adr0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -367,10 +264,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 0 180)
+				(pin input line
+					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "Dout"
+					(name "Adr1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -385,10 +282,10 @@
 						)
 					)
 				)
-				(pin input clock
-					(at 15.24 2.54 180)
+				(pin input line
+					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "CLK"
+					(name "CH3+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -403,10 +300,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 -12.7 90)
+				(pin input line
+					(at -10.16 -5.08 0)
 					(length 2.54)
-					(name "AGND"
+					(name "CH3-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -421,10 +318,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 10.16 270)
+				(pin input line
+					(at -10.16 -7.62 0)
 					(length 2.54)
-					(name "Vref"
+					(name "CH4+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -439,10 +336,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 10.16 270)
+				(pin input line
+					(at -10.16 -10.16 0)
 					(length 2.54)
-					(name "Vdd"
+					(name "CH4-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -460,7 +357,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -471,7 +368,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -480,8 +377,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -512,7 +409,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -545,27 +442,16 @@
 					)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
+			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -612,19 +498,8 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -642,7 +517,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -660,7 +535,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -678,7 +553,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -688,42 +563,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1182,6 +1021,268 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_3_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_3_Open"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 3-pole, open"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+				(at 0 -17.78 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Solder Jumper SPDT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_3_Open_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.016) (xy -1.016 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.016 -1.016)
+					(mid -2.0276 0)
+					(end -1.016 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.508 1.016)
+					(end 0.508 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 1.016)
+					(mid 2.0276 0)
+					(end 1.016 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_3_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -1623,22 +1724,16 @@
 		(uuid "12f7a2b0-86ee-4eb6-ab96-f2dfbf3dc392")
 	)
 	(junction
-		(at 111.76 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "13462aba-7b0e-4085-be9a-b59799e7ccf5")
-	)
-	(junction
 		(at 50.8 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "248153ad-a587-4861-b97a-585fc7c21acc")
 	)
 	(junction
-		(at 111.76 60.96)
+		(at 95.25 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "26cb815d-66ad-4935-8a69-bc1047813cb2")
+		(uuid "3a804ac8-0e9f-44e2-afb1-7ec9c2a35652")
 	)
 	(junction
 		(at 63.5 137.16)
@@ -1671,10 +1766,22 @@
 		(uuid "7120180a-83d9-476c-aef6-e4e83c9feb8f")
 	)
 	(junction
+		(at 95.25 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c52fc80-dc30-4362-a6ad-6d024e25c5f3")
+	)
+	(junction
 		(at 50.8 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7db36eb2-7662-4e6e-9b92-cde8885d16c9")
+	)
+	(junction
+		(at 95.25 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f58a114-98c8-40f8-ae88-3493b11a7fa0")
 	)
 	(junction
 		(at 63.5 40.64)
@@ -1734,6 +1841,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 63.5) (xy 95.25 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a187a2a-b4a6-4039-98cf-9df14c742ffc")
+	)
+	(wire
+		(pts
 			(xy 50.8 49.53) (xy 50.8 50.8)
 		)
 		(stroke
@@ -1744,23 +1861,33 @@
 	)
 	(wire
 		(pts
-			(xy 127 76.2) (xy 152.4 76.2)
+			(xy 146.05 55.88) (xy 148.59 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14f936ed-f1ef-4628-8a94-7238e17917bb")
+		(uuid "10a6b35c-ff51-4db9-955e-e4a99eda7158")
 	)
 	(wire
 		(pts
-			(xy 109.22 60.96) (xy 111.76 60.96)
+			(xy 120.65 66.04) (xy 153.67 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "151dd67d-efab-4efd-b94a-08713c856455")
+		(uuid "13d029ff-4f7f-4b08-b876-beea443ad9ec")
+	)
+	(wire
+		(pts
+			(xy 95.25 63.5) (xy 95.25 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1edfe78b-93db-45b0-b0c4-aac4c7b764f8")
 	)
 	(wire
 		(pts
@@ -1784,6 +1911,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 58.42) (xy 95.25 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe81a8e-52cf-4f6e-bbf0-9b149977444e")
+	)
+	(wire
+		(pts
 			(xy 63.5 50.8) (xy 50.8 50.8)
 		)
 		(stroke
@@ -1794,13 +1931,23 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 66.04) (xy 149.86 66.04)
+			(xy 130.81 68.58) (xy 130.81 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31930316-25dd-4d5c-9f89-ef6101f3173d")
+		(uuid "33c244cf-0ffd-48f1-8456-c252e6a28b4a")
+	)
+	(wire
+		(pts
+			(xy 146.05 62.23) (xy 146.05 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35cc46de-e4b4-4d41-969c-c2fed7ea0b40")
 	)
 	(wire
 		(pts
@@ -1834,6 +1981,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 68.58) (xy 95.25 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4051326f-49f7-44e5-aae1-ff8aef4ad253")
+	)
+	(wire
+		(pts
 			(xy 105.41 120.65) (xy 105.41 124.46)
 		)
 		(stroke
@@ -1851,16 +2008,6 @@
 			(type default)
 		)
 		(uuid "4696de5d-5fdb-4498-8dda-7f7ae59d4133")
-	)
-	(wire
-		(pts
-			(xy 111.76 85.09) (xy 111.76 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47810cff-4ad4-46f8-99f8-bb76b2e3f979")
 	)
 	(wire
 		(pts
@@ -1894,23 +2041,13 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 85.09) (xy 109.22 85.09)
+			(xy 120.65 58.42) (xy 148.59 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "50821015-fe88-4b6e-92a3-39d00bf38884")
-	)
-	(wire
-		(pts
-			(xy 109.22 85.09) (xy 109.22 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cd0eaa7-17fb-4fdb-8763-afc180f31268")
+		(uuid "5bcada70-7925-4db9-85fb-bd0506438f84")
 	)
 	(wire
 		(pts
@@ -1954,13 +2091,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 71.12) (xy 152.4 71.12)
+			(xy 95.25 76.2) (xy 95.25 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71b86805-de14-4307-a48b-1004a425a691")
+		(uuid "744145f4-bb9c-47ef-90bd-96ab63693e95")
 	)
 	(wire
 		(pts
@@ -1991,16 +2128,6 @@
 			(type default)
 		)
 		(uuid "77af2b9e-f257-4008-befa-b86d0cb32dc4")
-	)
-	(wire
-		(pts
-			(xy 127 68.58) (xy 152.4 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78972cb5-4c8c-49ff-912a-2ac1841c93b1")
 	)
 	(wire
 		(pts
@@ -2054,16 +2181,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 86.36) (xy 111.76 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "952823b0-a0cd-43d4-9790-bfd90afd39c7")
-	)
-	(wire
-		(pts
 			(xy 34.29 137.16) (xy 50.8 137.16)
 		)
 		(stroke
@@ -2071,6 +2188,16 @@
 			(type default)
 		)
 		(uuid "9c340d23-e739-418f-9675-a8d73c038019")
+	)
+	(wire
+		(pts
+			(xy 153.67 66.04) (xy 153.67 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0e68da6-c5f5-4d37-b71c-405d287f8fb5")
 	)
 	(wire
 		(pts
@@ -2091,6 +2218,16 @@
 			(type default)
 		)
 		(uuid "b81ff15c-d5ce-492d-8a8c-d2aee7f78afe")
+	)
+	(wire
+		(pts
+			(xy 100.33 58.42) (xy 95.25 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9601128-80a9-4241-b50c-2444abce76cd")
 	)
 	(wire
 		(pts
@@ -2144,6 +2281,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 60.96) (xy 148.59 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf140ea3-d280-412e-962f-77d2b6db6d29")
+	)
+	(wire
+		(pts
 			(xy 63.5 105.41) (xy 73.66 105.41)
 		)
 		(stroke
@@ -2154,23 +2301,33 @@
 	)
 	(wire
 		(pts
-			(xy 127 73.66) (xy 152.4 73.66)
+			(xy 100.33 68.58) (xy 95.25 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d98db7b4-5e8e-4686-837e-8ab8a11eacab")
+		(uuid "de1ef87d-4f0e-410c-8132-e41979541c40")
 	)
 	(wire
 		(pts
-			(xy 149.86 66.04) (xy 149.86 78.74)
+			(xy 120.65 68.58) (xy 130.81 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd879998-119b-4c41-9e21-fdcf555dc8ec")
+		(uuid "eb0502cc-b860-4584-8596-7e00052ef59b")
+	)
+	(wire
+		(pts
+			(xy 95.25 73.66) (xy 100.33 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb50385b-e39a-41dd-a646-cd7c15d3c1e6")
 	)
 	(wire
 		(pts
@@ -2262,35 +2419,15 @@
 		)
 		(uuid "febd82da-07fe-4ff5-a924-8f9dd330ac52")
 	)
-	(label "MOSI"
-		(at 134.62 73.66 0)
+	(label "SCL"
+		(at 134.62 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "256132f3-660e-4d70-b91b-811f8425b58e")
-	)
-	(label "IN3"
-		(at 96.52 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "55bd939e-cb3d-4dc2-9b9e-dbeafe6f3fed")
-	)
-	(label "~{CS}"
-		(at 134.62 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5e036a5d-5189-4bd4-a9f0-4a7c74c82b61")
+		(uuid "19cde595-bf64-498f-9476-79d35f8e71d5")
 	)
 	(label "IN3"
 		(at 73.66 137.16 0)
@@ -2302,36 +2439,6 @@
 		)
 		(uuid "62726ab8-5fdf-43ea-932f-41b1ccb85bc4")
 	)
-	(label "MISO"
-		(at 134.62 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "64be5fda-9d4f-4180-a2de-14f86363fed8")
-	)
-	(label "IN1"
-		(at 96.52 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "68a6949b-b29a-43f5-8c31-c4a375947671")
-	)
-	(label "IN0"
-		(at 96.52 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "79e771af-edc4-4500-a664-284746d89d74")
-	)
 	(label "IN2"
 		(at 73.66 105.41 0)
 		(effects
@@ -2342,15 +2449,15 @@
 		)
 		(uuid "99ebc315-e161-4aff-b425-c0a68766f594")
 	)
-	(label "SCK"
-		(at 134.62 68.58 0)
+	(label "IN2"
+		(at 100.33 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "bdb32f8e-657f-4dc9-a713-0fc110d4c144")
+		(uuid "c407ff2d-e5c3-44ad-9b34-4974d49a4fa9")
 	)
 	(label "IN0"
 		(at 73.66 40.64 0)
@@ -2362,6 +2469,26 @@
 		)
 		(uuid "ca892cf2-8eaf-4cd7-b076-cea5dd9a4140")
 	)
+	(label "IN0"
+		(at 100.33 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d23b40e6-b88b-40e0-8549-f9b7a5b5e8f0")
+	)
+	(label "SDA"
+		(at 134.62 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4ce7c00-4100-4366-9e07-07960c061e49")
+	)
 	(label "IN1"
 		(at 73.66 72.39 0)
 		(effects
@@ -2372,15 +2499,143 @@
 		)
 		(uuid "e04a358f-0392-4f6c-ba6e-c6a97d372813")
 	)
-	(label "IN2"
-		(at 96.52 73.66 180)
+	(label "IN3"
+		(at 100.33 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "f27541a1-107d-42b1-af52-4095ad71bf31")
+		(uuid "f33a11a8-fc1e-4a9b-9ae4-b54c1a3a4bfd")
+	)
+	(label "IN1"
+		(at 100.33 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fb72ab4a-bc84-4701-92f1-38e90d4633e9")
+	)
+	(symbol
+		(lib_id "Analog_ADC:MCP3428x-xSL")
+		(at 110.49 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "002e8b48-a333-45a3-a80f-621316679ffa")
+		(property "Reference" "U2"
+			(at 112.6333 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP3428x-xSL"
+			(at 112.6333 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 132.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf"
+			(at 110.49 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "16-Bit, Multi-Channel ΔΣ Analog-to-Digital Converter with I2C Interface and On-Board Reference, SOIC-14"
+			(at 110.49 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "52b6124a-7a02-4102-abc7-da9fab98451a")
+		)
+		(pin "10"
+			(uuid "4f92cdb9-dd8a-4f52-9d9b-711ec71eb025")
+		)
+		(pin "13"
+			(uuid "379eab96-d317-4871-a258-040929fbe1c1")
+		)
+		(pin "9"
+			(uuid "8b82341c-fb17-4550-a1ff-835f51bcd29b")
+		)
+		(pin "6"
+			(uuid "b1177c22-8fa4-45d2-badd-2b4961458bde")
+		)
+		(pin "14"
+			(uuid "7281c056-3c0e-4a84-a175-f2cc7165fa38")
+		)
+		(pin "4"
+			(uuid "22e8f9b1-dec7-4079-8570-bf7edf57becc")
+		)
+		(pin "12"
+			(uuid "98142fa2-828e-4cb5-b025-cca7e882cc74")
+		)
+		(pin "11"
+			(uuid "73e8f359-bbdc-4fc5-a8c0-51e57d1b4172")
+		)
+		(pin "7"
+			(uuid "b7d5851a-d8f9-4b37-bf06-ba1f3c58d43b")
+		)
+		(pin "8"
+			(uuid "1b531baf-0fd7-47c6-9a45-b700b19ab437")
+		)
+		(pin "5"
+			(uuid "a2027b24-3e33-4cf9-bfcc-92eacec8cad9")
+		)
+		(pin "2"
+			(uuid "802a4569-fabd-40de-a790-cdcb7e3835c1")
+		)
+		(pin "1"
+			(uuid "984a38a7-afa4-4d3a-a6ee-15d6d1ca934d")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2452,9 +2707,87 @@
 			(uuid "54bea6fe-528d-437b-8747-63b381e86551")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 110.49 78.74 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "059eb724-f563-48bb-860a-091a46eb6e73")
+		(property "Reference" "#PWR015"
+			(at 110.49 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 110.49 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5acca273-a131-4d92-a4e7-b913302fe1de")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2534,7 +2867,7 @@
 			(uuid "9bf2f33c-e100-4125-9966-face77b91244")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R6")
 					(unit 1)
@@ -2612,7 +2945,7 @@
 			(uuid "34d53cd0-d97f-42bc-9895-51b66dfa2e63")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR05")
 					(unit 1)
@@ -2653,7 +2986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_M2.5_thinoutline"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 102.87 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2690,9 +3023,87 @@
 			(uuid "3555bfa6-1c82-44ad-8dd8-49a3697e39b7")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.73 77.47 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2344a794-1917-49b8-82af-edbc341adfa0")
+		(property "Reference" "#PWR017"
+			(at 119.38 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38e25ba4-26c7-40c8-8587-669a991a9d9b")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -2772,7 +3183,7 @@
 			(uuid "423e8380-e5eb-4d1d-831c-ce119928a0c2")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "TH4")
 					(unit 1)
@@ -2854,7 +3265,7 @@
 			(uuid "5b7d82b5-2806-48fd-b529-5398b9e31d4b")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R5")
 					(unit 1)
@@ -2895,7 +3306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_M2.5_thinoutline"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 102.87 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2932,7 +3343,7 @@
 			(uuid "5624c0dd-348d-44ca-b0a4-77e474633520")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "H4")
 					(unit 1)
@@ -3014,7 +3425,7 @@
 			(uuid "f7e74dfd-208d-40e7-a9bc-17ffa8e846d4")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "C3")
 					(unit 1)
@@ -3096,7 +3507,7 @@
 			(uuid "655749ab-4ee0-4488-ae86-c6e33960ea60")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R7")
 					(unit 1)
@@ -3174,7 +3585,7 @@
 			(uuid "6bf98bea-5ac3-4470-9e07-88e0b29e94b9")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR01")
 					(unit 1)
@@ -3252,7 +3663,7 @@
 			(uuid "bd17ee62-1591-4720-9b9c-f014ad5abf19")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR04")
 					(unit 1)
@@ -3261,8 +3672,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Analog_ADC:MCP3204")
-		(at 111.76 71.12 0)
+		(lib_id "power:VCC")
+		(at 158.75 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3271,31 +3682,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4a88b9ee-a830-494f-abbd-22f2798b82fd")
-		(property "Reference" "U1"
-			(at 113.9033 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP3204"
-			(at 113.9033 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 134.62 78.74 0)
+		(uuid "522cfc38-d8f2-4cfb-be6a-c3cf60f062ff")
+		(property "Reference" "#PWR019"
+			(at 154.94 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3305,104 +3694,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21298c.pdf"
-			(at 134.62 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A/D Converter, 12-Bit, 4-Channel, SPI Interface, 2.7V-5.5V"
-			(at 111.76 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "9"
-			(uuid "e0b5b9bb-1cbf-44c3-8536-dd9cbdacf055")
-		)
-		(pin "6"
-			(uuid "9f4d48d8-b7c1-4ec7-9023-025b47cc8504")
-		)
-		(pin "12"
-			(uuid "da42c588-e3c9-409f-abcb-74b2b0dcba0e")
-		)
-		(pin "7"
-			(uuid "e5cbe346-f65d-4f13-a384-cdbe64d91252")
-		)
-		(pin "5"
-			(uuid "a3807d2e-c5a6-415c-a312-9bdaafa0aa24")
-		)
-		(pin "10"
-			(uuid "52255b7a-c215-4054-abc3-407f59824f5f")
-		)
-		(pin "1"
-			(uuid "1403f055-f526-49c4-a5ba-4e51e8c6a6c9")
-		)
-		(pin "4"
-			(uuid "fcbbea34-0f3e-488c-b76d-69aea9b849d3")
-		)
-		(pin "13"
-			(uuid "875e2132-a507-4fde-8f2d-d0309fe59af5")
-		)
-		(pin "14"
-			(uuid "77f455a6-3290-4b7e-8f24-816fdaaf6527")
-		)
-		(pin "11"
-			(uuid "48d39cf4-a162-4ac4-a163-8b5d51646097")
-		)
-		(pin "3"
-			(uuid "54c94ad3-f6a5-4004-aec1-7a6f34bc6e3e")
-		)
-		(pin "2"
-			(uuid "329faf0a-dc51-458d-ba6a-1a2436b6d0c6")
-		)
-		(pin "8"
-			(uuid "0d063cc3-4695-4ef6-b90f-aacd5115b3ea")
-		)
-		(instances
-			(project "temp-adc"
-				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 149.86 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e37a47f-1ed7-42b9-9c32-7e3cdd966caa")
-		(property "Reference" "#PWR012"
-			(at 149.86 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 149.86 83.82 0)
+		(property "Value" "VCC"
+			(at 163.83 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3412,7 +3705,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 78.74 0)
+			(at 158.75 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3423,7 +3716,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 78.74 0)
+			(at 158.75 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3433,8 +3726,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 78.74 0)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 158.75 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3445,20 +3738,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "031455b4-7f19-4a41-8437-b1a52ca82287")
+			(uuid "119cb3b2-77cb-4db1-a548-c49e86712f0c")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
-					(reference "#PWR012")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 157.48 68.58 0)
+		(lib_id "power:VCC")
+		(at 148.59 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3467,31 +3760,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4f0b6905-5341-4bfc-9672-dfd1ae5b9019")
-		(property "Reference" "J1"
-			(at 160.02 68.5799 0)
+		(uuid "5489dbae-1c90-4343-becf-7605d83c6acf")
+		(property "Reference" "#PWR010"
+			(at 148.59 57.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x06"
-			(at 160.02 71.1199 0)
+		(property "Value" "VCC"
+			(at 148.59 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 157.48 68.58 0)
+		(property "Footprint" ""
+			(at 148.59 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3502,7 +3794,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 68.58 0)
+			(at 148.59 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3512,8 +3804,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 157.48 68.58 0)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 148.59 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3522,29 +3814,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "4"
-			(uuid "1f0b7fbd-95e8-4dda-8889-44992774128c")
-		)
-		(pin "6"
-			(uuid "46bedbfb-3b9e-4d2d-b8b0-e27072516cb7")
-		)
-		(pin "2"
-			(uuid "97a45611-571c-48fd-85d3-17627695bfce")
-		)
-		(pin "5"
-			(uuid "df0c7c91-7fb4-4bee-8a96-491114e531b5")
 		)
 		(pin "1"
-			(uuid "407fd19c-2731-4713-89e6-8f4103a4a121")
-		)
-		(pin "3"
-			(uuid "335ec43f-4b4b-451d-8c93-933aaadc75f1")
+			(uuid "177143b3-b3ff-43c9-a2d4-c4e9e2afc13e")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
-					(reference "J1")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3624,9 +3901,87 @@
 			(uuid "4a28f439-7fa8-42ee-b68a-6109e814506f")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "647b2eee-aeae-411f-aa46-02eb3f65bf22")
+		(property "Reference" "#PWR011"
+			(at 95.25 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a26c28f9-c0bd-4903-be08-966a10dd4d7c")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3706,7 +4061,7 @@
 			(uuid "96e005e4-57c4-4a5f-b4d6-23e7e079c9c3")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "TH1")
 					(unit 1)
@@ -3715,8 +4070,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 152.4 63.5 0)
+		(lib_id "power:GND")
+		(at 148.59 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3725,9 +4080,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "71e6cefb-b81f-4f32-a725-2b1fdb9a7ef4")
-		(property "Reference" "#PWR010"
-			(at 152.4 67.31 0)
+		(uuid "752fb709-9b50-4227-8917-e04a09378dbb")
+		(property "Reference" "#PWR018"
+			(at 142.24 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3737,8 +4092,8 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
-			(at 152.4 58.42 0)
+		(property "Value" "GND"
+			(at 143.51 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3748,7 +4103,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 63.5 0)
+			(at 148.59 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3759,7 +4114,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 63.5 0)
+			(at 148.59 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3769,8 +4124,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 152.4 63.5 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3781,12 +4136,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "87ed179f-c62b-4e60-969a-adfed5fdac00")
+			(uuid "1ec9e176-0751-42d5-9182-d7ed040498dc")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
-					(reference "#PWR010")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -3866,7 +4221,7 @@
 			(uuid "ac04963a-e03c-4e4d-93d6-f64702fe926a")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R2")
 					(unit 1)
@@ -3947,9 +4302,87 @@
 			(uuid "ed1c89d9-eb16-4616-b5c0-92ff5e04f4fe")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 135.89 77.47 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "853b032e-3e9c-4357-b958-afccb2bb482d")
+		(property "Reference" "#PWR016"
+			(at 132.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 140.97 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 135.89 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "024d65e3-2e81-4c1e-8b84-5fb18ead02ad")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4029,87 +4462,9 @@
 			(uuid "982f4e82-a7f3-485f-9b5d-f9c9256b79ae")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 111.76 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d2b99f5-23a5-4a8c-84af-68840fafbb35")
-		(property "Reference" "#PWR09"
-			(at 111.76 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 111.76 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 111.76 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "81b4ace2-52ce-482e-9699-8687935fd024")
-		)
-		(instances
-			(project "temp-adc"
-				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4188,9 +4543,116 @@
 			(uuid "fbf0cf23-b8ae-417b-a9d1-741ccbda6812")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 153.67 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97f25a6f-56aa-4526-96b4-4a637891ec99")
+		(property "Reference" "JP2"
+			(at 154.9401 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 152.4001 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 153.67 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 153.67 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 153.67 59.69 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 153.67 57.15 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "632d8fd5-fabe-483b-ba12-3ec93e00312c")
+		)
+		(pin "2"
+			(uuid "7b89fe94-a130-4241-a459-1101ac21bda2")
+		)
+		(pin "3"
+			(uuid "6b74cfc5-6632-4b36-acc1-1572ddff3431")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -4270,7 +4732,7 @@
 			(uuid "da448f64-1bb4-4f56-a7fa-981d3cb65bee")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "TH2")
 					(unit 1)
@@ -4348,9 +4810,194 @@
 			(uuid "beb2bab9-261a-47b4-987b-ae74d96b9f4a")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6a27b87-05cf-4af1-aa03-a2a07c313827")
+		(property "Reference" "#PWR012"
+			(at 146.05 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "43fc1c96-dac4-4d40-917e-217cc135d046")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 130.81 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9f8c9bf-2b97-4189-a8f0-114f9df091fb")
+		(property "Reference" "JP1"
+			(at 132.0801 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 129.5401 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 130.81 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 130.81 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 130.81 59.69 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 130.81 57.15 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5cd81c1e-3118-45f3-b8c4-bd1ad2ba6bd0")
+		)
+		(pin "2"
+			(uuid "971b85a8-9f4c-40e8-a061-5ec417935812")
+		)
+		(pin "3"
+			(uuid "b8c31e80-bd2f-4560-93c5-f17975833da9")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -4430,9 +5077,87 @@
 			(uuid "01e3a7e5-80f3-44df-b3e5-0607aeb55b95")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 110.49 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be721218-57f8-4150-a139-5c0b4ccb9645")
+		(property "Reference" "#PWR014"
+			(at 110.49 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 110.49 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 110.49 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8fd51d75-8096-4323-93ca-e20c094b25cb")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4512,7 +5237,7 @@
 			(uuid "9574e97a-40fd-4833-9150-fa17ff2364e0")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R8")
 					(unit 1)
@@ -4590,7 +5315,7 @@
 			(uuid "cb956e51-9d26-4d90-b93d-b170aafb9633")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR03")
 					(unit 1)
@@ -4672,7 +5397,7 @@
 			(uuid "7b74571d-a693-4c2e-899c-7ad88a6b3e3f")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "R1")
 					(unit 1)
@@ -4713,7 +5438,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_M2.5_thinoutline"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 102.87 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4750,7 +5475,7 @@
 			(uuid "450ca191-72de-4a0c-a136-990aaaf7a804")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "H2")
 					(unit 1)
@@ -4832,7 +5557,7 @@
 			(uuid "646f8537-6ac5-4ca1-9cce-3c126bef9b12")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "TH3")
 					(unit 1)
@@ -4910,7 +5635,7 @@
 			(uuid "27b59720-acb0-44ec-a02e-491c16da03a0")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR07")
 					(unit 1)
@@ -4988,9 +5713,97 @@
 			(uuid "b6ff6975-2da3-4643-acde-77ca814df56e")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 153.67 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee9eb454-0f26-4bb7-8ac5-c9398bdf2b46")
+		(property "Reference" "J3"
+			(at 156.21 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 156.21 58.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 153.67 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 153.67 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ba597d9b-24e8-4c30-b215-f3febbac681f")
+		)
+		(pin "1"
+			(uuid "d5e12f02-91b7-4cfe-8fac-41bd968d207f")
+		)
+		(pin "3"
+			(uuid "191c9bc9-c860-4ec7-89b2-2e47f7c6c945")
+		)
+		(pin "4"
+			(uuid "f5609995-cadf-426d-8aef-89a4f79c7c3e")
+		)
+		(instances
+			(project "temp-adc-i2c"
+				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5066,87 +5879,9 @@
 			(uuid "03796f05-0cb4-4e52-b9e5-4ca4935ad70a")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 111.76 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f812f877-7c27-415c-b25f-7ec7200c9068")
-		(property "Reference" "#PWR011"
-			(at 111.76 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4dd685d0-6843-4153-b718-06ea6b17b878")
-		)
-		(instances
-			(project "temp-adc"
-				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5185,7 +5920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_M2.5_thinoutline"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 102.87 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5222,7 +5957,7 @@
 			(uuid "268473c3-31da-4f24-a191-69acd1f991d4")
 		)
 		(instances
-			(project "temp-adc"
+			(project "temp-adc-i2c"
 				(path "/f73c6a48-c777-4d34-85c5-6b67d53582c5"
 					(reference "H1")
 					(unit 1)
